@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+@theme{
+    --color-secondary: #6C2BD9;
+}
+
+/* Ensure dark mode works */
+.dark {
+    color-scheme: dark;
+}
+
+/* Force dark mode styles to be generated */
+.dark .bg-white {
+    background-color: rgb(31 41 55);
+}
+
+.dark .text-gray-900 {
+    color: rgb(255 255 255);
+}
+
+.dark .text-gray-600 {
+    color: rgb(209 213 219);
+}
+
+.dark .bg-gray-50 {
+    background-color: rgb(17 24 39);
+}
+
+.dark .border-gray-200 {
+    border-color: rgb(55 65 81);
+}
